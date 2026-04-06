@@ -1,0 +1,34 @@
+{
+  "version": 1,
+
+  "agent": {
+    "name": "Staging Template",
+    "description": "A personal AI assistant that's actually helpful. Reads files, searches the web, manages memory, and gets things done without asking unnecessary questions.",
+    "vibe": "resourceful, opinionated, gets things done",
+    "emoji": "🧠"
+  },
+
+  "template": {
+    "slug": "staging-template",
+    "category": "general",
+    "tags": ["assistant", "personal", "productivity", "general"],
+    "partnerName": "Pinata"
+  },
+
+  "secrets": [
+    {
+      "name": "MY_SECRET",
+      "description": "Example secret — any secret your agent might need to work",
+      "required": false
+    }
+  ],
+
+  "tasks": [
+    {
+      "name": "daily-check",
+      "prompt": "Run your daily check-in routine",
+      "schedule": "0 9 * * *",
+      "enabled": true
+    }
+  ]
+}
