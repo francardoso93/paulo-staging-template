@@ -24,8 +24,8 @@
   ],
 
   "scripts": {
-    "build": "cd ./workspace/projects/hello-world && npm install --include=dev",
-    "start": "cd ./workspace/projects/hello-world && npx vite --host 0.0.0.0"
+    "build": "cd ./workspace/projects/hello-world && npm install --include=dev && npm run build",
+    "start": "cd ./workspace/projects/hello-world && npx vite preview --host 0.0.0.0 --port 5173"
   },
 
   "routes": [
