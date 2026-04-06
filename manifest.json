@@ -23,6 +23,19 @@
     }
   ],
 
+  "scripts": {
+    "build": "cd ./workspace/projects/hello-world && npm install --include=dev",
+    "start": "cd ./workspace/projects/hello-world && npx vite --host 0.0.0.0"
+  },
+
+  "routes": [
+    {
+      "port": 5173,
+      "path": "/app",
+      "protected": false
+    }
+  ],
+
   "tasks": [
     {
       "name": "daily-check",
