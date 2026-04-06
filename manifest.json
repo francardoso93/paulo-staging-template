@@ -24,14 +24,14 @@
   ],
 
   "scripts": {
-    "build": "cd ./workspace/projects/hello-world && npm install --include=dev && npm run build",
-    "start": "cd ./workspace/projects/hello-world && npx vite preview --host 0.0.0.0 --port 5173"
+    "build": "cd ./workspace/projects/hello-test && npm install --include=dev",
+    "start": "cd ./workspace/projects/hello-test && npx vite --host 0.0.0.0 --port 3000"
   },
 
   "routes": [
     {
-      "port": 5173,
-      "path": "/app",
+      "port": 3000,
+      "path": "/test",
       "protected": false
     }
   ],
