@@ -7,7 +7,7 @@
     "emoji": "🧠"
   },
   "template": {
-    "slug": "staging-template",
+    "slug": "francisco-staging-template",
     "category": "general",
     "tags": [
       "assistant",
@@ -31,7 +31,7 @@
   "routes": [
     {
       "port": 3000,
-      "path": "/paulo",
+      "path": "/app",
       "protected": false
     }
   ],
