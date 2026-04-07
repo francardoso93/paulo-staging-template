@@ -1,20 +1,22 @@
 {
   "version": 1,
-
   "agent": {
     "name": "Staging Template",
     "description": "A personal AI assistant that's actually helpful. Reads files, searches the web, manages memory, and gets things done without asking unnecessary questions.",
     "vibe": "resourceful, opinionated, gets things done",
     "emoji": "🧠"
   },
-
   "template": {
     "slug": "staging-template",
     "category": "general",
-    "tags": ["assistant", "personal", "productivity", "general"],
+    "tags": [
+      "assistant",
+      "personal",
+      "productivity",
+      "general"
+    ],
     "partnerName": "Pinata"
   },
-
   "secrets": [
     {
       "name": "MY_SECRET",
@@ -22,20 +24,17 @@
       "required": false
     }
   ],
-
   "scripts": {
     "build": "cd ./workspace/projects/hello-test && npm install --include=dev",
     "start": "cd ./workspace/projects/hello-test && npx vite --host 0.0.0.0 --port 3000"
   },
-
   "routes": [
     {
       "port": 3000,
-      "path": "/test",
+      "path": "/paulo",
       "protected": false
     }
   ],
-
   "tasks": [
     {
       "name": "daily-check",
